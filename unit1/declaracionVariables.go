@@ -1,23 +1,23 @@
 //declaracion de variables en Go
-package unit1
+package main
 
 import "fmt"
 
-func Variable(){
+func Variable() {
 	//Declaracion de variables con tipos de datos básicos
 	var (
-		nombre string
-		edad int
+		nombre  string
+		edad    int
 		estudia bool
 		salario float64
 	)
 	//Declaracion de variable en formato corto
-	nivelAcad:="Ingeniería"
+	nivelAcad := "Ingeniería"
 	//asignación de valores a las variables
-	nombre= "Charles McLean"
-	edad=39
+	nombre = "Charles McLean"
+	edad = 39
 	estudia = true
-	salario=1000
+	salario = 1000
 
 	//imprimir los valores de cada variable con la funcion Println
 	fmt.Println("Nombre: ", nombre)
