@@ -21,6 +21,7 @@ func main() {
 			posic1 := Coches[i]
 
 		}
+		//append para agregar los 2 nuevos coches
 	}
 	fmt.Println(Coches)
 

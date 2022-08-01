@@ -4,20 +4,21 @@ package main
 
 import "fmt"
 
-func sum(nums ...int) int {
+//Sum funcion variatica que recibe los numeros a sumar
+func sum(nums ...int) (int, int) {
 	total := 0
-	for _, a := range nums {
-		total = total + a
+	var I int
+	I = len(nums)
+	for _, num := range nums {
+		total += num
 	}
-	return total
+	return I, total
 }
 func main() {
-	total := sum(1, 2, 3, 4, 5)
-	fmt.Println("La suma de los 5 primeros numeros es:", total)
+	nums, total := sum(1, 2, 3, 4, 5, 7)
+	fmt.Println("La suma de los ", nums, "numeros ingresados es:", total)
 }
 
 /*
-run the programs: go run funcVariaticaSuma.go
-Output:
-	La suma de los 5 primeros numeros es: 15
+	La suma de los 6 numeros ingresados es: 22
 */

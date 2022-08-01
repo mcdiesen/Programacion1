@@ -2,32 +2,31 @@ package main
 
 import "fmt"
 
-type empleado struct {
-	segSocial string
+type Empleado struct {
+	SegSocial string
 }
 
-func (e empleado) setSegSocial(segSoc string) string {
-	e.segSocial = segSoc
+func (e Empleado) setSegSocial(segSoc string) string {
+	e.SegSocial = segSoc
 
 	return "se pudo hacer el registro"
 }
-func (e empleado) getSegSocial() {
-	fmt.Println(e.segSocial)
+func (e Empleado) getSegSocial() {
+	fmt.Println(e.SegSocial)
 }
 
 type persona struct {
-	nombre string
-	emp    empleado
+	Nombre string
+	Emp    Empleado
 }
 
 func (p persona) walk() {
-	fmt.Println("Persona", p.nombre, "Caminando")
+	fmt.Println("Persona", p.Nombre, "Caminando")
 }
 
 func main() {
-	p1 := persona{"Charles", empleado{"123", "325"}}
+	p1 := persona{"Charles", Empleado{"325"}}
 	p1.walk()
-	p1.emp.setSegSocial("999")
-	p1.emp.getSegSocial()
-
+	p1.Emp.setSegSocial("999")
+	p1.Emp.getSegSocial()
 }
