@@ -1,9 +1,7 @@
 //Buscar y escribir la primera vocal del teclado(leer uno a uno los caracteres)
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	var vocal int
@@ -39,5 +37,4 @@ func main() {
 		fmt.Println("ninguna vocal ingresada")
 		break
 	}
-
 }

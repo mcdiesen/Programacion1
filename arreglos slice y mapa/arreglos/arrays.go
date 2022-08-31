@@ -4,7 +4,7 @@ package arreglos
 import "fmt"
 
 func main() {
-	//Declaracion del arreglo planeta con capacidad de 8 string
+	//Planets arreglo con capacidad de 8 elem. tipo string
 	var planets [8]string
 
 	//Asignación de valores en el arreglo - inicia en la posicion cero

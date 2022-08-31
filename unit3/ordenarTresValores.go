@@ -1,5 +1,6 @@
 /*
-Realizar un algoritmo que permita ordenar tres números mediante un procedimiento de intercambio en dos variables
+Realizar un algoritmo que permita ordenar tres números
+mediante un procedimiento de intercambio en dos variables
 (paso de parámetros por referencia).
 */
 package main
@@ -15,7 +16,9 @@ func intercambio(a, b *float64) {
 func main() {
 	var x, y, z float64
 	fmt.Println("Deme tres numeros reales")
-	fmt.Scan(&x, &y, &z)
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
 	if x > y {
 		intercambio(&x, &y)
 	}
@@ -26,5 +29,4 @@ func main() {
 		intercambio(&x, &y)
 	}
 	fmt.Println(x, y, z)
-
 }
